@@ -1,33 +1,89 @@
-body {
-    font-family: Arial;
+* {
     margin: 0;
-    background: #0f172a;
-    color: white;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-nav {
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background: #1e293b;
 }
 
-ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
+.logo {
+    color: #38bdf8;
 }
 
-a {
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
 }
 
+.nav-links a:hover,
+.active {
+    color: #38bdf8;
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
     margin-top: 100px;
 }
 
-h1 {
+.hero span {
     color: #38bdf8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Container */
+.container {
+    padding: 40px;
+}
+
+/* Skills */
+.skills {
+    margin-top: 10px;
+}
+
+.skills li {
+    margin-bottom: 8px;
+}
+
+/* Projects */
+.project-card {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: #1e293b;
 }
