@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinjal Gawali - Resume</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --primary: #059669; /* Emerald 600 */
+            --bg-color: #ffffff;
+            --font-stack: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            color: var(--text-main);
+            background-color: #f3f4f6; /* light gray for screen */
+            line-height: 1.4;
+            margin: 0;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-container {
+            width: 100%;
+            max-width: 800px;
+            background-color: var(--bg-color);
+            padding: 2.5rem 3.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-top: 8px solid var(--primary);
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: -0.025em;
+            color: var(--text-main);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.25rem;
+            margin-top: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 0 0 0.15rem 0;
+            color: var(--text-main);
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Lists */
+        ul {
+            margin: 0 0 0.75rem 0;
+            padding-left: 1.5rem;
+            color: var(--text-main);
+        }
+
+        li {
+            margin-bottom: 0.2rem;
+            font-size: 0.9rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        /* Projects Section */
+        .project-header {
+            margin-bottom: 0.25rem;
+        }
+
+        .project-title {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .project-tech {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .skill-category {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* Print Button for Web View */
+        .print-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 9999px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.2s, transform 0.2s;
+            z-index: 50;
+        }
+
+        .print-btn:hover {
+            background-color: #047857;
+            transform: translateY(-2px);
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background-color: transparent;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+                border-top: none;
+            }
+
+            .print-btn {
+                display: none;
+            }
+            
+            /* Ensure colors print properly */
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            
+            h2 {
+                color: var(--primary) !important;
+                border-bottom: 2px solid #e5e7eb !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">Download as PDF</button>
+
+    <div class="resume-container">
+        <!-- Header -->
+        <header>
+            <h1>Kinjal Gawali</h1>
+            <div class="subtitle">Computer Science Engineering Student & Software Developer</div>
+            
+            <div class="contact-info">
+                <span>📍 India</span>
+                <span>📧 <a href="mailto:kinjalgawali743@gmail.com">kinjalgawali743@gmail.com</a></span>
+                <span>🔗 <a href="https://www.linkedin.com/in/kinjal-gawali-0456a5334/" target="_blank">linkedin.com/in/kinjal-gawali</a></span>
+                <span>💻 <a href="https://github.com/kinjal000" target="_blank">github.com/kinjal000</a></span>
+            </div>
+            
+            <p style="margin-top: -0.5rem; margin-bottom: 1.5rem;">
+                I build practical digital solutions and explore modern technologies across web development, cloud, DevOps, AI, and software systems. Focused on building reliable, scalable systems with a DevOps-oriented mindset.
+            </p>
+        </header>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="project-header">
+                <h3><span>B.Tech in Computer Science Engineering</span> <span>2024 – 2028</span></h3>
+                <div class="project-tech">ITM Skills University, Kharghar | CGPA: 8.31</div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Experience</h2>
+            <div class="project-header">
+                <h3><span>Intern</span> <span>Lead Upgrade</span></h3>
+            </div>
+            <ul>
+                <li>Developed and maintained an educational website for exam aspirants.</li>
+                <li>Organized and managed 300+ questions and study materials while ensuring content accuracy.</li>
+            </ul>
+
+            <div class="project-header">
+                <h3><span>Sales Intern</span> <span>Kwento</span></h3>
+            </div>
+            <ul>
+                <li>Supported customer engagement, lead generation, and promotional activities.</li>
+                <li>Collaborated with the team to improve product visibility and support business objectives.</li>
+            </ul>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div><span class="skill-category">Languages:</span> C++, Python, Java, JavaScript, Dart, SQL, Shell Scripting, Bash</div>
+                <div><span class="skill-category">Web & Backend:</span> HTML, CSS, Node.js, Express.js, Flask, FastAPI, Django, React, Tailwind CSS, REST APIs, GraphQL, Socket.IO, WebSockets</div>
+                <div><span class="skill-category">Databases & Cloud:</span> MySQL, MongoDB, PostgreSQL, SQLite, Firebase, Firestore, Supabase, Google Cloud Platform, AWS EC2, Amazon S3, CloudWatch, IAM</div>
+                <div><span class="skill-category">DevOps & Tools:</span> Linux, Ubuntu, Git, GitHub, Kubernetes, Docker, Jenkins, Terraform, Prometheus, Grafana, ELK Stack, Nginx, Postman</div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="project-header">
+                <h3>
+                    <span class="project-title">Space Mission Data Operations Platform</span>
+                    <span><a href="https://github.com/kinjal000/Space-Mission-Data-Operations-Platform" target="_blank">GitHub ↗</a></span>
+                </h3>
+                <div class="project-tech">Python, Flask, MySQL, Docker, Kubernetes, Jenkins, Terraform</div>
+            </div>
+            <ul>
+                <li>Architected a cloud-native platform to centralize management of satellites, telemetry, and operations.</li>
+                <li>Built a robust DevOps ecosystem featuring automated CI/CD workflows, Infrastructure as Code, and real-time monitoring.</li>
+            </ul>
+
+            <div class="project-header">
+                <h3>
+                    <span class="project-title">WealthPath — Investment Advisory Cloud</span>
+                    <span><a href="https://github.com/kinjal000/WealthPath" target="_blank">GitHub ↗</a></span>
+                </h3>
+                <div class="project-tech">Python, Flask, MySQL, AWS EC2, Amazon S3, CloudWatch, IAM</div>
+            </div>
+            <ul>
+                <li>Developed a scalable cloud-based platform to centralize client and investment records securely.</li>
+                <li>Implemented secure administrator authentication, strict access control via AWS IAM, and automated backup scripts.</li>
+            </ul>
+
+            <div class="project-header">
+                <h3>
+                    <span class="project-title">GeoAlert — Location-Based Notification System</span>
+                    <span><a href="https://github.com/kinjal000/GeoAlert-Location-Based-Notification-System" target="_blank">GitHub ↗</a></span>
+                </h3>
+                <div class="project-tech">Python, Flask, MySQL, MongoDB, JavaScript, Leaflet</div>
+            </div>
+            <ul>
+                <li>Built a location-aware notification platform demonstrating geofencing for contextual, geographical alerts.</li>
+                <li>Designed a hybrid database architecture (MySQL and MongoDB) for efficient spatial data and log management.</li>
+            </ul>
+
+            <div class="project-header">
+                <h3>
+                    <span class="project-title">Parking Lot Management System</span>
+                    <span><a href="https://github.com/kinjal000/Parking_lot_systeem" target="_blank">GitHub ↗</a></span>
+                </h3>
+                <div class="project-tech">Python, Flask, MySQL, HTML, CSS, JavaScript</div>
+            </div>
+            <ul>
+                <li>Engineered a full-stack application automating vehicle entry, dynamic slot allocation, and real-time billing.</li>
+                <li>Designed efficient relational schemas to support multiple vehicle types and multi-level parking structures.</li>
+            </ul>
+
+            <div class="project-header">
+                <h3>
+                    <span class="project-title">RoadSense</span>
+                    <span><a href="https://github.com/kinjal000/RoadSense.git" target="_blank">GitHub ↗</a></span>
+                </h3>
+                <div class="project-tech">WebSockets</div>
+            </div>
+            <ul>
+                <li>Developed a real-time traffic tracking web application leveraging WebSockets.</li>
+            </ul>
+
+            <div class="project-header">
+                <h3>
+                    <span class="project-title">MedCare</span>
+                    <span><a href="https://github.com/kinjal000/MedCare.git" target="_blank">GitHub ↗</a></span>
+                </h3>
+            </div>
+            <ul>
+                <li>Built a comprehensive medical equipment maintenance management system.</li>
+            </ul>
+
+            <div class="project-header">
+                <h3>
+                    <span class="project-title">Duolingo UI Design</span>
+                    <span><a href="https://github.com/kinjal000/Duoingo-UI-Design.git" target="_blank">GitHub ↗</a></span>
+                </h3>
+                <div class="project-tech">Figma</div>
+            </div>
+            <ul>
+                <li>Designed an intuitive UI/UX prototype using Figma based on the Duolingo interface.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
